@@ -1,0 +1,92 @@
+.body {
+}
+.container {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+  margin: auto;
+  display: block;
+  width: 70%;
+  /* grid */
+  display: grid;
+  gap: 3px;
+  /* grid-template-columns: auto; */
+  /* grid-template-columns: 60px repeat(2, 1fr) auto; */
+  /* grid-template-columns: auto 70%; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(5, 1fr); */
+  /* grid-template-rows: auto; */
+
+  grid-template-areas:
+    "i1 i1 i1"
+    "i2 i2 i2"
+    "i3 i3 i4"
+    "i3 i3 i5"
+    "i6 i9 i9"
+    "i7 i9 i9"
+    "i8 i9 i9"
+    "i10 i10 i10";
+}
+
+.container > div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+div.globe {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.globe {
+  grid-area: i1;
+  background: blue;
+}
+.nav {
+  grid-area: i2;
+  background: rgb(2, 36, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 36, 0, 1) 11%,
+    rgba(167, 26, 119, 1) 29%,
+    rgba(52, 133, 194, 1) 52%,
+    rgba(24, 200, 82, 1) 73%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.banner {
+  grid-area: i3;
+  background: linear-gradient(to right, red, blue) !important;
+}
+.offer1 {
+  grid-area: i4;
+  background: maroon;
+}
+.offer2 {
+  grid-area: i5;
+  background: purple;
+}
+.leftside {
+  grid-area: i6;
+  background: skyblue;
+}
+.recent {
+  grid-area: i7;
+  background: purple;
+}
+.tags {
+  grid-area: i8;
+  background: red;
+}
+.product1 {
+  grid-area: i9;
+  background: radial-gradient(red, purple, blue);
+}
+.footer {
+  grid-area: i10;
+  background: black;
+  color: white;
+}
