@@ -1,0 +1,132 @@
+body {
+  /* background-image: url(ass/pexels-souvenirpixels-1486974.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+p {
+  font-size: 15px;
+}
+
+li {
+  font-size: 15px;
+}
+.parent {
+  color: rgb(253, 252, 252);
+  font-size: 2rem;
+  min-height: 100vh;
+  margin: auto;
+  width: 70%;
+  background-image: url(ass/pexels-souvenirpixels-1486974.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  /* gap: 10px; Adjusted gap */
+
+  grid-template-areas:
+    "i1 i4 i4"
+    "i2 i5 i5"
+    "i2 i6 i6"
+    "i3 i7 i8"
+    "i3 i7 i8";
+}
+
+.parent > div {
+  justify-content: center;
+  text-align: "center";
+
+  align-items: center;
+  font-size: small;
+  /* background: rgba(150, 150, 207, 0.4); */
+
+  color: rgb(62, 5, 59);
+}
+
+h1 {
+  padding-left: 130px;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.subheading {
+  font-weight: bold;
+  font-size: 15px;
+}
+.item-1 > img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 14px;
+}
+
+.item-1 {
+  grid-area: i1;
+  background: rgba(81, 81, 202, 0.686);
+}
+.item-2 {
+  grid-area: i2;
+  background: rgba(81, 81, 202, 0.686);
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+.item-3 {
+  grid-area: i3;
+  background: rgba(81, 81, 202, 0.686);
+}
+.item-4 {
+  grid-area: i4;
+  background: rgba(81, 81, 202, 0.686);
+  padding-left: 40px;
+}
+
+.item-4 > p {
+  padding-left: 210px;
+}
+.item-5 {
+  grid-area: i5;
+  margin: 20px;
+  text-align: center;
+  padding-left: 40px;
+}
+.item-6 {
+  grid-area: i6;
+  margin: 20px;
+  text-align: center;
+}
+.item-7 {
+  grid-area: i7;
+  margin: 0px 0px 0px 50px;
+  text-align: center;
+}
+.item-8 {
+  grid-area: i8;
+  margin-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+}
+/* .item-8 > b {
+  font-size: 15px;
+  text-decoration: underline;
+} */
+
+.Institution {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.colorbg {
+  background-color: rgb(169, 169, 169);
+  color: lightgray;
+}
+
+.item-6 > h2 {
+  margin-left: 40px;
+}
